@@ -35,6 +35,7 @@ a {
 
 h1, h2, h3, h4{
     font-family: var(--fontHeading);
+    line-height: 1.2;
 }
 
 h1{
@@ -55,6 +56,10 @@ h4{
 
 img{
     max-width: 100%;
+}
+
+ul{
+    list-style: none;
 }
 
 /* Utiledades */
@@ -81,6 +86,139 @@ img{
 
 .header__texto{
     color: var(--Blanco);
-    margin: 2rem;
+    margin-top: 5rem;
     text-align: center;
 }
+
+@media (min-width: 580px) {
+    .header__texto{
+        margin-top: 20rem;
+    }
+    
+}
+
+/* NAVEGACION */
+.logo{
+    color: var(--Blanco);
+}
+
+.logo__nombre{
+    font-weight: 400;
+}
+
+.logo__bold{
+    font-weight: 700;
+}
+
+@media (min-width: 580px) {
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 580px) {
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.navegacion__enlace{
+    display: block;
+    color: var(--Blanco);
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* CONTENIDO PRINCIPAL INDEX */
+@media (min-width: 768px) {
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.entrada{
+    border-bottom: 1px solid #d1d1d1;
+    margin-bottom: 2rem;
+}
+
+.entrada:last-child{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.boton{
+    display: block;
+    padding: 1rem 3rem;
+    font-family: var(--fontHeading);
+    color: var(--Blanco);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+
+@media (min-width: 768px) {
+    .boton{
+        display: inline-block;
+    }
+}
+
+.boton--primario{
+    background-color: var(--Negro);
+}
+
+.boton--secundario{
+    background-color: var(--Primario);
+}
+
+/* ASIDE BAR INDEX */
+.widget-curso{
+    border-bottom: 1px solid #d1d1d1;
+    margin-bottom: 2rem;
+}
+
+.widget-curso:last-child{
+    border: none;
+    margin: none;
+
+}
+
+.widget-curso__label{
+    font-family: var(--fontHeading);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.widget-curso__info{
+    font-weight: 400;
+}
+
+/* FOOTER */
+.footer{
+    height: auto;
+    background-color: var(--Negro);
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 580px) {
+    .footer{
+        height: 10rem;
+    }
+}
+
+.footer .logo__nombre{
+    font-size: 3rem;
+}
+
+.footer .navegacion__enlace{
+    font-size: 1.5rem;
+}
+
