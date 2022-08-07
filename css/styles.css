@@ -5,6 +5,7 @@
     --Primario: #784D3C;
     --Blanco: #fff;
     --Negro: #000;
+    --Gris: #d1d1d1;
 }
 
 html{
@@ -149,7 +150,7 @@ ul{
 }
 
 .entrada{
-    border-bottom: 1px solid #d1d1d1;
+    border-bottom: 1px solid var(--Gris);
     margin-bottom: 2rem;
 }
 
@@ -187,7 +188,7 @@ ul{
 
 /* ASIDE BAR INDEX */
 .widget-curso{
-    border-bottom: 1px solid #d1d1d1;
+    border-bottom: 1px solid var(--Gris);
     margin-bottom: 2rem;
 }
 
@@ -230,8 +231,10 @@ ul{
 .footer .navegacion__enlace{
     font-size: 1.5rem;
 }
+/********************************************** ESTILOS DE PAGINAS QUE NO SON INDEX *********************************************************/
 
 /* SOBRE NOSOTROS STYLES */
+
 @media (min-width: 768px) {
     .sobre-nosotros{
         display: grid;
@@ -239,3 +242,44 @@ ul{
         gap: 2rem;
     }
 }
+
+/* CURSOS STYLES */
+
+@media (min-width: 768px) {
+    .cursos{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .curso__informacion{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-auto-flow: column;
+        grid-column-gap: 2rem;
+    }
+}
+.curso__informacion{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--Gris);
+}
+
+.curso__informacion:last-child{
+    border-bottom: none;
+}
+
+.curso__label{
+    margin: 2rem 0 0 0;
+    font-family: var(--fontHeading);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.curso__label:nth-of-type(2){
+    margin: 0;
+}
+
+.curso__info{
+    font-weight: 400;
+}
+
