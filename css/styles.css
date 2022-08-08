@@ -266,6 +266,7 @@ ul{
 
 .curso__informacion:last-child{
     border-bottom: none;
+    padding: 3rem 0 0 0;
 }
 
 .curso__label{
